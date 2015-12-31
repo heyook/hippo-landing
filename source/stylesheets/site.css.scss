@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "colors";
+@import "normalize";
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+body {
+  background: white;
+  text-align: center;
+  font-family: $font-family;
+  font-size: 1em;
+  background: $blue-light;
+  background-size: cover;
+}
+
+.logo img {
+  height: 5em;
+  margin-top: 6em;
+}
+
+h1 {
+  color: white;
+  font-family: $font-family;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding: 40px 0;
+}
+
+footer {
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: $gray-lighter;
+  // text-shadow: 1px 1px #444;
+  i.fa-heart {
+    color: $pink;
+  }
+}
+
+.welcome {
+  margin: 5% auto;
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
